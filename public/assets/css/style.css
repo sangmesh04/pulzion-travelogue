@@ -10,6 +10,7 @@
 --------------------------------------------------------------*/
 body {
   color: #444444;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 .logo #logospan{
@@ -371,6 +372,7 @@ a:hover {
   width: 100%;
   height: calc(100vh - 110px);
   background: url("../img/pratapgad.jpg") bottom center;
+  text-align: center;
   background-size: cover;
   position: relative;
 }
