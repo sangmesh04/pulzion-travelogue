@@ -5,6 +5,7 @@ import kishtwarnationalpark from "./../img/kishtwarnationalpark.jpg";
 import rameshwaram from "./../img/rameshwaram.jpg";
 import { Link } from "react-router-dom";
 import Signup from "./Signup";
+import SignIn from "./Signin";
 
 const HomeBody = () => {
   return (
@@ -254,85 +255,8 @@ const HomeBody = () => {
         {/* signup module imorting */}
         <Signup />
 
-        {/* <!-- sign in --> */}
-        <div
-          className="modal fade"
-          id="signin"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabIndex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div className="modal-dialog">
-            <form action="#">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title" id="staticBackdropLabel">
-                    Sign In
-                  </h5>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div className="modal-body">
-                  <div
-                    className="alert alert-warning alert-dismissible fade show"
-                    role="alert"
-                  >
-                    <strong> Wrong </strong> email or password!
-                    <button
-                      type="button"
-                      className="btn-close"
-                      data-bs-dismiss="alert"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="email"
-                      className="form-control"
-                      required
-                      id="signinemail"
-                      placeholder="name@example.com"
-                    />
-                    <label htmlFor="floatingInput">Email address</label>
-                  </div>
-                  <br />
-                  <div className="form-floating">
-                    <input
-                      type="password"
-                      className="form-control"
-                      required
-                      id="signinpassword"
-                      placeholder="Password"
-                    />
-                    <label htmlFor="floatingPassword">Password</label>
-                  </div>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-dark"
-                    data-bs-dismiss="modal"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="submit"
-                    id="signinbtn"
-                    className="btn btn-primary"
-                  >
-                    Sign In
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        {/* signin module importing */}
+        <SignIn />
       </main>
       {/* <!-- End #main --> */}
     </>
